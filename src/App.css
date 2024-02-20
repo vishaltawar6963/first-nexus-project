@@ -1,3 +1,42 @@
+:root{
+  --back-angle:90deg;
+}
+  /* .background {
+    background: rgb(2,0,36); 
+    
+    background: linear-gradient(var(--back-angle), rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+ 
+    
+   
+  } */
+
+    .gradient-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, #010215, #29028d, #010215);
+      background-size: 400% 400%;
+      animation: rotateGradient 10s linear infinite;
+    }
+
+    @keyframes rotateGradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+
+.box-shadow{
+  box-shadow: 5px 5px 10px 0px #242645;
+}
 .App {
   text-align: center;
 }
